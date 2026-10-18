@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMS Bomber Online - Free Instant Prank Text Bomber (2026)</title>
+  <meta name="description" content="Send free rapid prank SMS bursts online with SMS Bomber. Unlimited messages, live delivery dashboard, adjustable speeds, and zero signup required.">
+  <link rel="icon" href="../call-bomber-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/site.css">
+  
+  <meta property="og:title" content="SMS Bomber Online - Free Text Prank Tool (2026)">
+  <meta property="og:description" content="Send rapid-fire SMS notifications and OTP prank bursts with live console telemetry. 100% free and anonymous.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://callbombers.com.in/sms-bomber/">
+</head>
+<body>
+  <div class="site-shell">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="page-container header-inner">
+        <a class="brand" href="../" aria-label="Call Bomber Home">
+          <img src="../assets/logo.svg" alt="Call Bomber Logo" width="160" height="38">
+        </a>
+        
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="../" class="nav-link">Call Bomber</a></li>
+            <li><a href="../" class="nav-link active">SMS Bomber</a></li>
+            <li><a href="../call-bomber-apk/" class="nav-link">Android APK</a></li>
+            <li><a href="../bombitup-apk/" class="nav-link">BOMBitUP</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" class="theme-btn" id="themeToggleBtn" aria-label="Toggle theme">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </button>
+          <button type="button" class="menu-toggle" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="page-container">
+        <div class="hero-pill">
+          <span class="pulse-dot"></span>
+          <span>TURBO SMS RELAY ACTIVE // MULTI-CARRIER GATEWAYS READY</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Online <span class="gradient-text">SMS Bomber</span> Tool
+        </h1>
+        
+        <p class="hero-lead">
+          Flood any mobile number with rapid text messages and OTP alerts. Enjoy live packet monitoring, customizable speed intervals, and zero registrations.
+        </p>
+
+        <div class="hero-stats-row">
+          <div class="hero-stat-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Multi-Channel SMS Gateway</span>
+          </div>
+          <div class="hero-stat-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            <span>Up to 100 SMS / Session</span>
+          </div>
+          <div class="hero-stat-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>100% Anonymous Delivery</span>
+          </div>
+        </div>
+
+        <!-- SMS Tool Card -->
+        <div class="tool-wrapper">
+          <div class="cyber-card">
+            <form id="blastForm">
+
+              <!-- Input -->
+              <div class="tool-grid">
+                <div class="form-group" style="grid-column: 1 / -1;">
+                  <label class="form-label" for="targetNumber">
+                    <span>Target Mobile Number</span>
+                    <span class="label-sub">Live SMS Gateway Relay</span>
+                  </label>
+                  
+                  <div class="input-combo">
+                    <div class="country-select-wrap">
+                      <select id="countrySelect" class="cyber-select" aria-label="Select Country">
+                        <option value="IN" selected>🇮🇳 India (+91)</option>
+                        <option value="PK">🇵🇰 Pakistan (+92)</option>
+                        <option value="US">🇺🇸 United States (+1)</option>
+                        <option value="GB">🇬🇧 United Kingdom (+44)</option>
+                        <option value="BD">🇧🇩 Bangladesh (+880)</option>
+                        <option value="AE">🇦🇪 UAE (+971)</option>
+                      </select>
+                      <span class="select-arrow">▾</span>
+                    </div>
+                    <input type="tel" id="targetNumber" class="cyber-input" placeholder="e.g. 9876543210" maxlength="15" autocomplete="off" required>
+                  </div>
+                  
+                  <div id="carrierBadge" class="carrier-badge" style="display: none;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                    <span>Detecting Carrier...</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Intensity Presets -->
+              <div class="intensity-section">
+                <label class="form-label">
+                  <span>SMS Wave Count</span>
+                  <span class="label-sub">Select amount of SMS messages</span>
+                </label>
+                <div class="intensity-chips">
+                  <button type="button" class="chip-btn" data-count="15">
+                    <span class="chip-title">15 SMS</span>
+                    <span class="chip-sub">Quick Tickle</span>
+                  </button>
+                  <button type="button" class="chip-btn active" data-count="30">
+                    <span class="chip-title">30 SMS</span>
+                    <span class="chip-sub">Rapid Burst</span>
+                  </button>
+                  <button type="button" class="chip-btn" data-count="60">
+                    <span class="chip-title">60 SMS</span>
+                    <span class="chip-sub">Heavy Flood</span>
+                  </button>
+                  <button type="button" class="chip-btn" data-count="100">
+                    <span class="chip-title">100 SMS</span>
+                    <span class="chip-sub">Super Overload</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Advanced Settings -->
+              <div class="options-row">
+                <div class="option-box">
+                  <label for="speedInterval">Dispatch Speed</label>
+                  <select id="speedInterval">
+                    <option value="fast">⚡ Rapid Fire (0.9s)</option>
+                    <option value="steady" selected>⚖️ Steady (2.0s)</option>
+                    <option value="stealth">🕵️ Stealth (4.0s)</option>
+                  </select>
+                </div>
+
+                <div class="option-box">
+                  <label for="callerIdMask">SMS Payload Format</label>
+                  <select id="callerIdMask">
+                    <option value="OTP-Sim">🔐 Verification OTP Alerts</option>
+                    <option value="Delivery-Alert">📦 Courier Order Updates</option>
+                    <option value="Discount-Code">🎟️ Flash Promo Alerts</option>
+                    <option value="Server-Ping">🖥️ System Status Check</option>
+                  </select>
+                </div>
+
+                <div class="option-box">
+                  <label for="soundEffects">Sound Feedback</label>
+                  <select id="soundEffects">
+                    <option value="on" selected>🔊 Audio SFX (ON)</option>
+                    <option value="off">🔇 Muted</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="terms-row">
+                <input type="checkbox" id="agreeTerms" required>
+                <label for="agreeTerms">
+                  I confirm that I will only use this SMS bomber tool with permission on authorized test numbers for harmless prank purposes.
+                </label>
+              </div>
+
+              <a href="https://callbombers.com.in/sms-bomber/" id="launchBtn" class="launch-btn" role="button">
+                <span>LAUNCH SMS STORM ⚡</span>
+              </a>
+            </form>
+
+            <!-- LIVE TELEMETRY HUD -->
+            <div id="blastHud" class="blast-hud">
+              <div class="hud-header">
+                <div class="hud-title-wrap">
+                  <span class="pulse-dot" style="background: var(--emerald); box-shadow: 0 0 10px var(--emerald);"></span>
+                  <span class="hud-title">SMS GATEWAY STREAM</span>
+                </div>
+                <div class="hud-controls">
+                  <button type="button" id="hudPauseBtn" class="hud-btn pause">⏸ PAUSE</button>
+                  <button type="button" id="hudAbortBtn" class="hud-btn abort">⏹ STOP</button>
+                </div>
+              </div>
+
+              <div class="hud-metrics">
+                <div class="metric-card">
+                  <div class="metric-val" id="statSent">0</div>
+                  <div class="metric-lbl">Dispatched / <span id="statTotal">30</span></div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-val" id="statRate">99.8%</div>
+                  <div class="metric-lbl">Relay Health</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-val" id="statPing">18ms</div>
+                  <div class="metric-lbl">Transit Ping</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-val" id="statNodes">8</div>
+                  <div class="metric-lbl">SMS Gateways</div>
+                </div>
+              </div>
+
+              <div class="waveform-container">
+                <canvas id="waveCanvas"></canvas>
+              </div>
+
+              <div class="hud-progress-wrap">
+                <div class="hud-progress-bar">
+                  <div id="hudProgressFill" class="hud-progress-fill"></div>
+                </div>
+              </div>
+
+              <div id="terminalLog" class="cyber-terminal"></div>
+            </div>
+
+            <!-- VICTORY SCREEN -->
+            <div id="victoryCard" class="victory-card">
+              <div class="victory-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h2 class="victory-title">SMS Wave Dispatched!</h2>
+              <p class="victory-desc">All SMS message payloads have been successfully transmitted across our high-speed cloud telephony relays.</p>
+              
+              <div class="victory-actions">
+                <button type="button" id="sharePrankBtn" class="btn-primary">
+                  <span>Share Prank with Friend 📤</span>
+                </button>
+                <button type="button" id="blastAgainBtn" class="btn-secondary">
+                  <span>Send More SMS 🔄</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comprehensive SMS Guide: Plagiarism-Free & To-The-Point -->
+    <main class="page-container article-page">
+      <div class="article-body">
+        
+        <h2>How to Use SMS Bomber Safely</h2>
+        <p>
+          Using an online SMS Bomber is intuitive and fast. Follow these three simple steps to start your text blast:
+        </p>
+        <div class="feature-grid" style="margin: 20px 0;">
+          <div class="feature-box">
+            <div class="feature-icon">01</div>
+            <h3 class="feature-title">Input Mobile Number</h3>
+            <p class="feature-text">Select your target country code and enter the 10-digit mobile number you want to prank.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon purple">02</div>
+            <h3 class="feature-title">Choose Message Count</h3>
+            <p class="feature-text">Select your preferred dispatch volume (15, 30, 60, or 100 messages) and customize the speed.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon emerald">03</div>
+            <h3 class="feature-title">Trigger the Blast</h3>
+            <p class="feature-text">Hit the launch button and follow the live delivery dashboard as messages transmit through cloud gateways.</p>
+          </div>
+        </div>
+
+        <h2>What is SMS Bomber?</h2>
+        <p>
+          An <strong>SMS Bomber</strong> is an automated web utility that sends a rapid stream of text messages to a target phone number in a brief period. Originally designed for software developers to stress-test SMS gateway integrations and verification endpoints, it is now widely enjoyed as a harmless practical joke between friends and family members.
+        </p>
+
+        <h2>Best Features of SMS Bomber</h2>
+        <ul style="margin-left: 20px; line-height: 1.8;">
+          <li><strong>Instant Multi-Message Delivery:</strong> Dispatches dozens of notifications sequentially without manual typing.</li>
+          <li><strong>Multi-Carrier Routing:</strong> Optimized routing across major telecom operators ensures consistent delivery.</li>
+          <li><strong>Speed Throttler Controls:</strong> Toggle between Rapid Fire, Steady, and Stealth delivery pacing to suit any prank.</li>
+          <li><strong>Zero Cost &amp; No Registration:</strong> 100% free with no account creation, credit cards, or hidden fees.</li>
+          <li><strong>Anonymous Identity:</strong> Messages route through virtual SMS gateways, keeping your real number completely private.</li>
+        </ul>
+
+        <h2>Risks of SMS Bombing &amp; Responsible Use</h2>
+        <p>
+          While SMS bombing is fantastic for harmless humor between consenting friends, improper usage against strangers can cause annoyance or violate telecom provider rules. Never use this service to target emergency numbers, essential healthcare workers, or individuals who have asked not to be pranked.
+        </p>
+
+        <h2>Why Choose Our SMS Bomber?</h2>
+        <p>
+          Unlike outdated apps filled with disruptive video ads and slow connection queues, our online platform runs cleanly inside your web browser. You get live packet logs, waveform visualizers, instant status feedback, and complete privacy with zero data logging.
+        </p>
+
+        <h2>How to Prevent SMS Bombing Attacks</h2>
+        <p>
+          If you are on the receiving end of an intense SMS flood, you can stop it quickly:
+        </p>
+        <ul style="margin-left: 20px; line-height: 1.8;">
+          <li><strong>Enable Spam Protection:</strong> Turn on spam filtering in Google Messages or Apple iMessage to automatically mute unknown message floods.</li>
+          <li><strong>Register for DND:</strong> Activate Do Not Disturb with your mobile network provider to block commercial SMS streams.</li>
+          <li><strong>Mute Notifications Briefly:</strong> Putting your phone on Do Not Disturb for 15 minutes allows automated queues to complete quietly.</li>
+        </ul>
+
+        <h2>Best Prank Message Formats</h2>
+        <p>
+          Lighthearted message templates bring genuine laughs without causing alarm:
+        </p>
+        <ul style="margin-left: 20px; line-height: 1.8;">
+          <li><strong>Verification OTP Tokens:</strong> Generates humorous random 6-digit confirmation codes.</li>
+          <li><strong>Courier Delivery Updates:</strong> Informs your buddy that a giant mystery package is arriving shortly.</li>
+          <li><strong>Flash Discount Alerts:</strong> Alerts them to an unbelievable 99% off sale on their favorite item.</li>
+        </ul>
+
+        <h2>What is a Bulk SMS Sender &amp; Bulk SMS Gateway?</h2>
+        <p>
+          A <strong>Bulk SMS Sender</strong> is an enterprise platform used by organizations to transmit notices, reminders, and OTPs to thousands of customers simultaneously. A <strong>Bulk SMS Gateway</strong> is the technical telecom interface that routes these SMS packets directly into mobile carrier infrastructure with real-time delivery reporting.
+        </p>
+
+        <h2>Best Practices for SMS Security</h2>
+        <p>
+          Always keep your phone number confidential on public online forums, enable two-factor authentication via authenticator apps (rather than SMS alone), and avoid clicking unverified links inside unexpected text messages.
+        </p>
+
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-wrap" style="margin-top: 20px;">
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Is SMS Bomber completely free?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              Yes, 100%. You can launch unlimited SMS prank waves without any fees, subscriptions, or login credentials.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>How many messages can I send at once?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              You can select 15, 30, 60, or up to 100 messages per blast. Once completed, you can start a new session whenever you want.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Can I use this on mobile and desktop?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              Yes. The tool runs directly inside Chrome, Safari, Firefox, and Edge on any smartphone, tablet, or PC without needing an app installation.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="page-container footer-simple">
+        <a href="../" class="footer-logo" aria-label="Call Bomber Home">
+          <img src="../assets/logo.svg" alt="Call Bomber Logo" width="150" height="36">
+        </a>
+        <p>&copy; 2026 Call Bomber &mdash; for harmless entertainment &amp; authorized testing only.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../assets/site.js"></script>
+</body>
+</html>
